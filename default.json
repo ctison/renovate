@@ -1,0 +1,18 @@
+{
+  "commitMessageAction": "Upgrade",
+  "configWarningReuseIssue": false,
+  "dependencyDashboard": true,
+  "dependencyDashboardAutoclose": true,
+  "dependencyDashboardTitle": "Renovate Dependency Dashboard",
+  "pinDigests": true,
+  "rebaseWhen": "behind-base-branch",
+  "rollbackPrs": true,
+  "separateMajorMinor": true,
+  "separateMinorPatch": true,
+  "separateMultipleMajor": true,
+  "extends": [
+    ":ignoreModulesAndTests",
+    ":pinAllExceptPeerDependencies",
+    "docker:enableMajor"
+  ]
+}
