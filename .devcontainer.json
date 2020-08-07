@@ -1,0 +1,9 @@
+{
+  "dockerFile": "Dockerfile",
+  "postCreateCommand": "yarn install",
+  "extensions": [
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "mutantdino.resourcemonitor"
+  ]
+}
