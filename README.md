@@ -6,6 +6,6 @@
 
 ```json
 {
-  "extends": ["github>ctison/renovate-config"]
+  "extends": ["github>ctison/renovate"]
 }
 ```
