@@ -1,4 +1,9 @@
 {
+  "extends": [
+    ":ignoreModulesAndTests",
+    ":pinAllExceptPeerDependencies",
+    "docker:enableMajor"
+  ],
   "assignAutomerge": true,
   "assigneesFromCodeOwners": true,
   "automerge": true,
@@ -18,9 +23,14 @@
   "separateMajorMinor": true,
   "separateMinorPatch": true,
   "separateMultipleMajor": true,
-  "extends": [
-    ":ignoreModulesAndTests",
-    ":pinAllExceptPeerDependencies",
-    "docker:enableMajor"
+  "regexManagers": [
+    {
+      "fileMatch": [".+"],
+      "datasourceTemplate": "github-tags",
+      "matchStrings": [
+        "https://raw\\.githubusercontent\\.com/(?<depName>[^/]+/[^/]+)/(?<currentValue>v[^/]+)/",
+        "https://github\\.com/(?<depName>[^/]+/[^/]+)/releases/download/(?<currentValue>v[^/]+)/"
+      ]
+    }
   ]
 }
