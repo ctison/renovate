@@ -10,9 +10,6 @@
   "commitMessagePrefix": "[renovate]",
   "commitMessageAction": "Upgrade",
   "configWarningReuseIssue": false,
-  "dependencyDashboard": true,
-  "dependencyDashboardAutoclose": true,
-  "dependencyDashboardTitle": "Renovate Dependency Dashboard",
   "lockFileMaintenance": {
     "enabled": true,
     "schedule": ["before 2am"]
