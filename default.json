@@ -7,8 +7,7 @@
   "assignAutomerge": true,
   "assigneesFromCodeOwners": true,
   "automerge": true,
-  "commitMessagePrefix": "[renovate]",
-  "commitMessageAction": "Upgrade",
+  "semanticCommits": true,
   "configWarningReuseIssue": false,
   "lockFileMaintenance": {
     "enabled": true,
