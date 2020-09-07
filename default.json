@@ -16,6 +16,7 @@
     "schedule": ["before 2am"]
   },
   "pinDigests": true,
+  "postUpdateOptions": ["gomodTidy", "npmDedupe", "yarnDedupeHighest"],
   "rebaseWhen": "behind-base-branch",
   "rollbackPrs": true,
   "separateMajorMinor": true,
