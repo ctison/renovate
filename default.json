@@ -2,7 +2,9 @@
   "extends": [
     ":ignoreModulesAndTests",
     ":pinAllExceptPeerDependencies",
-    "docker:enableMajor"
+    "docker:enableMajor",
+    "group:monorepos",
+    "group:recommended"
   ],
   "assignAutomerge": true,
   "assigneesFromCodeOwners": true,
