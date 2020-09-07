@@ -19,7 +19,6 @@
   "rebaseWhen": "behind-base-branch",
   "rollbackPrs": true,
   "separateMajorMinor": true,
-  "separateMinorPatch": true,
   "separateMultipleMajor": true,
   "regexManagers": [
     {
