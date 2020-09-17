@@ -30,6 +30,12 @@
         "https://raw\\.githubusercontent\\.com/(?<depName>[^/]+/[^/]+)/(?<currentValue>v[^/]+)/",
         "https://github\\.com/(?<depName>[^/]+/[^/]+)/releases/download/(?<currentValue>v[^/]+)/"
       ]
+    },
+    {
+      "fileMatch": ["Dockerfile"],
+      "matchStrings": [
+        "# renovate: (?<datasource>[^\\s]+) (?<depName>.+)\nARG .+_VERSION='(?<currentValue>.+?)'\n"
+      ]
     }
   ]
 }
