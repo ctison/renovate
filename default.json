@@ -10,7 +10,7 @@
   "assignAutomerge": true,
   "assigneesFromCodeOwners": true,
   "automerge": true,
-  "semanticCommits": true,
+  "semanticCommits": "enabled",
   "configWarningReuseIssue": false,
   "lockFileMaintenance": {
     "enabled": true,
