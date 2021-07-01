@@ -4,7 +4,7 @@
     "format": "prettier --write '**/*.{ts,tsx,json,yaml,gql,md,html,css}'"
   },
   "devDependencies": {
-    "husky": "6.0.0",
+    "husky": "7.0.0",
     "lint-staged": "11.0.0",
     "prettier": "2.3.2"
   },
