@@ -3,6 +3,7 @@
   "extends": [
     ":ignoreModulesAndTests",
     ":pinAllExceptPeerDependencies",
+    ":preserveSemverRanges",
     "docker:enableMajor",
     "group:monorepos",
     "group:recommended"
@@ -16,7 +17,6 @@
     "enabled": true,
     "schedule": ["before 2am"]
   },
-  "pinDigests": true,
   "postUpdateOptions": ["gomodTidy", "npmDedupe", "yarnDedupeHighest"],
   "rebaseWhen": "behind-base-branch",
   "rollbackPrs": true,
