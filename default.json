@@ -1,5 +1,5 @@
 {
-  "$schema": "https://github.com/SchemaStore/schemastore/raw/master/src/schemas/json/renovate.json",
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     ":ignoreModulesAndTests",
     ":pinAllExceptPeerDependencies",
@@ -10,7 +10,6 @@
   ],
   "assignAutomerge": true,
   "assigneesFromCodeOwners": true,
-  "automerge": true,
   "semanticCommits": "enabled",
   "configWarningReuseIssue": false,
   "lockFileMaintenance": {
@@ -18,7 +17,7 @@
     "schedule": ["before 2am"]
   },
   "postUpdateOptions": ["gomodTidy", "npmDedupe", "yarnDedupeHighest"],
-  "rebaseWhen": "behind-base-branch",
+  "rebaseWhen": "conflicted",
   "rollbackPrs": true,
   "separateMajorMinor": true,
   "separateMultipleMajor": true,
