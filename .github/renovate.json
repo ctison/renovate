@@ -1,5 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>ctison/renovate"],
-  "repositories": ["ctison/renovate"]
+  "repositories": ["ctison/renovate"],
+  "automerge": true
 }
