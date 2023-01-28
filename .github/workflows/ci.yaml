@@ -14,7 +14,7 @@ concurrency:
 permissions: {}
 
 jobs:
-  build:
+  test:
     timeout-minutes: 5
     runs-on: ubuntu-latest
     steps:
@@ -22,7 +22,15 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version-file: .nvmrc
-      - run: |
+      - name: test
+        run: |
           corepack enable
           pnpm install --frozen-lockfile
           pnpm run format:check
+      - name: summary
+        run: |
+          echo >> $GITHUB_STEP_SUMMARY <<EOF
+          # Summary
+
+          Repository is correctly formatted! :tada:
+          EOF
