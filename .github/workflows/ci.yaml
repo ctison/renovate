@@ -29,8 +29,6 @@ jobs:
           pnpm run format:check
       - name: summary
         run: |
-          echo >> $GITHUB_STEP_SUMMARY <<EOF
-          # Summary
-
-          Repository is correctly formatted! :tada:
-          EOF
+          echo >> $GITHUB_STEP_SUMMARY '# Summary'
+          echo >> $GITHUB_STEP_SUMMARY ''
+          echo >> $GITHUB_STEP_SUMMARY Repository is correctly formatted! :tada:
