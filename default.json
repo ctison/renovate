@@ -16,13 +16,17 @@
     "enabled": true,
     "schedule": ["before 2am"]
   },
-  "postUpdateOptions": ["gomodTidy", "npmDedupe", "yarnDedupeHighest"],
-  "rebaseWhen": "conflicted",
+  "postUpdateOptions": [
+    "gomodTidy",
+    "helmUpdateSubChartArchives",
+    "npmDedupe",
+    "yarnDedupeHighest"
+  ],
   "rollbackPrs": true,
-  "separateMajorMinor": true,
   "separateMultipleMajor": true,
-  "regexManagers": [
+  "customManagers": [
     {
+      "customType": "regex",
       "fileMatch": [".+"],
       "datasourceTemplate": "github-tags",
       "matchStrings": [
@@ -31,6 +35,7 @@
       ]
     },
     {
+      "customType": "regex",
       "fileMatch": ["Dockerfile"],
       "matchStrings": [
         "# renovate: (?<datasource>[^\\s]+) (?<depName>.+)\nARG .+_VERSION='(?<currentValue>.+?)'\n"
