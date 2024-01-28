@@ -23,5 +23,5 @@
     "prettier": "3.2.4",
     "sort-package-json": "2.6.0"
   },
-  "packageManager": "pnpm@8.14.3"
+  "packageManager": "pnpm@8.15.0"
 }
