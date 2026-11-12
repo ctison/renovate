@@ -20,7 +20,7 @@
   "devDependencies": {
     "husky": "9.1.7",
     "lint-staged": "17.6.0",
-    "prettier": "3.9.10",
+    "prettier": "3.10.1",
     "sort-package-json": "4.1.0"
   },
   "packageManager": "pnpm@12.18.0"
